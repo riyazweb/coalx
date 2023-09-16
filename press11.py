@@ -35,12 +35,7 @@ from bs4 import BeautifulSoup
 
 
 import os
-"""
-Reverse engineering of Google Bard
-"""
-
-
-
+ 
 
 def main():
    
