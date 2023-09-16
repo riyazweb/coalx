@@ -33,9 +33,7 @@ if response.status_code == 200:
 else:
     print("Failed to fetch the XML from the URL.")
 import os
-"""
-Reverse engineering of Google Bard
-"""
+ 
 from moviepy.video.VideoClip import TextClip
 from moviepy.video.tools.subtitles import SubtitlesClip
  
