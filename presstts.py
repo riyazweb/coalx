@@ -1,3 +1,26 @@
+import os
+ 
+from moviepy.video.VideoClip import TextClip
+from moviepy.video.tools.subtitles import SubtitlesClip
+ 
+from bing_image_downloader import downloader
+from moviepy.editor import *
+from moviepy.video.io.VideoFileClip import VideoFileClip
+from moviepy.audio.fx.all import volumex
+
+from moviepy.audio.io.AudioFileClip import AudioFileClip
+from moviepy.video.VideoClip import ColorClip
+from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
+from moviepy.video.fx.all import resize
+import moviepy.editor as mp
+ 
+import os
+from whisper.utils import write_srt
+import whisper
+import openai
+import re
+ 
+import os
 import requests
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
@@ -32,29 +55,6 @@ if response.status_code == 200:
         print("No link found in the XML.")
 else:
     print("Failed to fetch the XML from the URL.")
-import os
- 
-from moviepy.video.VideoClip import TextClip
-from moviepy.video.tools.subtitles import SubtitlesClip
- 
-from bing_image_downloader import downloader
-from moviepy.editor import *
-from moviepy.video.io.VideoFileClip import VideoFileClip
-from moviepy.audio.fx.all import volumex
-
-from moviepy.audio.io.AudioFileClip import AudioFileClip
-from moviepy.video.VideoClip import ColorClip
-from moviepy.video.compositing.CompositeVideoClip import CompositeVideoClip
-from moviepy.video.fx.all import resize
-import moviepy.editor as mp
- 
-import os
-from whisper.utils import write_srt
-import whisper
-import openai
-import re
- 
-import os
 openai.api_key = 'api key here' 
 
 
