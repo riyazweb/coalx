@@ -19,7 +19,7 @@ import openai
 import re
  
 import os
-openai.api_key = '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' 
+openai.api_key = 'api key here' 
 import requests
 import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
