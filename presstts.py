@@ -55,7 +55,7 @@ import openai
 import re
  
 import os
-openai.api_key = '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' 
+openai.api_key = 'api key here' 
 
 
 
